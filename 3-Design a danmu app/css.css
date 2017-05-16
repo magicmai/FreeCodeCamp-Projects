@@ -1,0 +1,30 @@
+.container {
+	text-align: center;
+}
+
+#danmu {
+	position: relative;
+	height: 420px;
+	border: 1px solid #ccc;
+	margin: 15px auto;
+	overflow: hidden;
+}
+
+p {
+	position: absolute;
+	word-break:keep-all; /* 不换行 */
+	white-space:nowrap; /* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+}
+
+.form-group {
+	margin: 16px 0;
+}
+
+.form-control {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.btn {
+	width: 150px;
+}

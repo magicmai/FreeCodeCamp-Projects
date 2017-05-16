@@ -1,0 +1,48 @@
+body {
+/*	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492832048961&di=360584c4b606c858cfd3ba1090f87559&imgtype=0&src=http%3A%2F%2Ffile03.16sucai.com%2F2016%2F10%2F1100%2F16sucai_p20161005106_278.JPG);
+*/	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.weather-container {
+	background: rgba(255, 255, 255, .5);
+	margin:8% auto 0;
+	width: 30%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #333;
+	-webkit-box-shadow: 3px 3px 5px #333;
+}
+
+h1 {
+	font-family: '微软雅黑';
+	font-weight: 700;
+}
+
+#city {
+	padding-top: 0.5em;
+}
+
+#weather {
+	margin: 1em auto 2em;
+}
+
+#temp {
+	font-size: 50px;
+	margin: 30px 0;
+}
+
+.btn {
+	font-size: 16px;
+	margin-bottom: 1em;
+}
+
+footer {
+	font-family: 'Ranga', cursive;
+	position: fixed;
+	background-color: #111;
+	color: #fff;
+	bottom: 0;
+	width: 100%;
+}

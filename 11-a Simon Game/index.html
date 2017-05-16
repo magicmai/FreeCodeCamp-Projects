@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>西蒙游戏</title>
+	<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|PT+Sans+Narrow|Play" rel="stylesheet">
+	<link rel="stylesheet" href="css.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="row">
+			<div class="r1 display-ib" id="r1"></div>
+			<div class="r2 display-ib" id="r2"></div>
+		</div>
+		<div class="row">
+			<div class="r3 display-ib" id="r3"></div>
+			<div class="r4 display-ib" id="r4"></div>
+		</div>
+
+		<div class="center">
+			<h1>Simon<sup>®</sup></h1>
+			<div class="display-ib counter">
+				<h2>--</h2>
+				<label>COUNT</label>
+			</div>
+			<div class="display-ib">
+			 	<div>
+			 		<button type="button" class="btn" id="start-btn"></button>
+			 	</div>
+			 	<label>START</label>
+			</div>
+			
+			<div class="display-ib">
+				<div class="strict-container">
+					<div class="mode" id="mode"></div>
+					<div>
+						<button type="button" class="btn" id="strict-btn"></button>
+					</div>
+					<label>STRICT</label>
+				</div>
+			</div>
+				
+			<div class="on-off">
+				<label>OFF</label>
+				<div class="display-ib" id="on-off-bg">
+					<div id="on-off-btn" onclick="onOffGame()"></div>
+				</div>
+				<label>ON</label>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

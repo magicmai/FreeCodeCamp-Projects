@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>番茄时钟</title>
+	<link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Rationale" rel="stylesheet">
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<h1>Pomodoro Clock</h1>
+
+		<div class="settings" id="settings">
+			<div>
+				<p class="p-left">session length</p>
+			    <p class="p-right">break length</p>
+			</div>
+			<div class="session-length">
+				<button type="button" class="btn" id="pomodoro-minus-btn">-</button>
+				<button type="button" id="pomodoro-minutes-count"></button>
+				<button type="button" class="btn" id="pomodoro-plus-btn">+</button>
+			</div>
+			<div class="break-time">
+				<button type="button" class="btn" id="break-minus-btn">-</button>
+				<button type="button" id="break-minutes-count"></button>
+				<button type="button" class="btn" id="break-plus-btn">+</button>
+			</div>
+		</div>
+
+		<div class="clock" id="clock">
+			<span id="minutes"></span> : 
+			<span id="seconds"></span>
+		</div>
+
+		<div class="options">
+			<button type="button" class="btn start" id="start">start</button>
+			<!-- <button type="button" class="btn break" id="break">break</button> -->
+			<button type="button" class="btn reset hidden" id="reset">reset</button>
+		</div>
+
+	</div>
+	<script src="js.js"></script>
+</body>
+</html>

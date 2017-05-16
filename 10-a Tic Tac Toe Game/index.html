@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>井字游戏</title>
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div class="container">
+		<div class="game-container">
+
+			<div id="modal">
+				<p>Would you like to be X or O?</p>
+				<button type="button" id="x" onclick="userChoose(this.id)">X</button>
+				<button type="button" id="o" onclick="userChoose(this.id)">O</button>
+			</div>
+
+			<div id="play-game">
+				<table border="0">
+					<tr>
+						<th id="d1" class="cell" onclick="icon(this.id)"></th>
+						<th id="d2" class="cell" onclick="icon(this.id)"></th>
+						<th id="d3" class="cell" onclick="icon(this.id)"></th>
+					</tr>
+					<tr>
+						<th id="d4" class="cell" onclick="icon(this.id)"></th>
+						<th id="d5" class="cell" onclick="icon(this.id)"></th>
+						<th id="d6" class="cell" onclick="icon(this.id)"></th>
+					</tr>
+					<tr>
+						<th id="d7" class="cell" onclick="icon(this.id)"></th>
+						<th id="d8" class="cell" onclick="icon(this.id)"></th>
+						<th id="d9" class="cell" onclick="icon(this.id)"></th>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+	<script src="js.js"></script>	
+</body>
+</html>

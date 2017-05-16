@@ -1,0 +1,171 @@
+/* 
+*功能1: 你可以通过滚动来浏览这个页面的所有内容。
+*功能2: 你可以通过点击不同的按钮来跳到不同的社交媒体页。
+*功能3: 你可以看到不同项目的缩略图。
+*功能4: 你可以点击导航条上的按钮来调到网页上的不同区域。
+*/
+
+* {
+    -webkit-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
+    -webkit-transition: baackground 500ms;
+    -o-transition: baackground 500ms;
+    transition: baackground 500ms;
+}
+
+body {
+    margin:0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 95%;
+    margin: 10px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearf:before,
+.clearf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+    display: block;
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.col-2 {
+    width: 20%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-5 {
+    width: 50%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}.col-8 {
+    width: 80%;
+}.col-9 {
+    width: 90%;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 15px 10px 0;
+    background: #a0c8e8;
+    -webkit-box-shadow:  2px 2px 2px rgba(0, 0, 0, .2);
+    box-shadow:  2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.header .logo {
+    padding-left: 15%;
+    display: inline-block;
+
+}
+
+#logo {
+    font-family: 'Barrio', cursive;
+    font-size: 35px;
+    color: #0000ff;
+    text-shadow: 3px 3px 1px #f26c4f;
+}
+
+. img {
+    width: 120px;
+}
+
+.header .nav {
+    padding-right: 15%;
+    margin-top: 5px;
+}
+
+.header .nav a {
+    color: #000;
+    font-size: 20px; 
+    padding: 5px;
+    margin: 10px;
+}
+
+.header .nav a:hover {
+    background: #333;
+    border-radius: 4px;
+    color: #a0c8e8;
+}
+
+.container {
+    margin: 80px auto;
+    width: 70%;
+}
+
+.container > * {
+    margin: 30px 0;
+}
+
+.about {
+    padding-top: 40px;
+}
+
+.about p {
+    color: #333;
+}
+
+.main .avatar img {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.contact a {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.contact a:hover {
+    color: #fdb049;
+}
+
+footer {
+    padding: 8px;
+    text-align: center;
+    background: #fdb049;
+    -webkit-box-shadow:  -2px -2px 1px rgba(0, 0, 0, .1);
+    box-shadow:  -2px -2px 1px rgba(0, 0, 0, .1);
+}

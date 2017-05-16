@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	background: #F6F7EB;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.game-container {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 5% auto;
+	text-align: center;
+	background: #F6F7EB;
+	border: 10px solid  #393E41;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 5px #a4996d;
+	box-shadow: 5px 5px 5px #a4996d;
+}
+
+#modal {
+	position: absolute;
+}
+
+p {
+	font-size: 2.2em;
+}
+
+button {
+	color: rgba(0, 0, 0, .7);
+	width: 80px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	font-size: 3em;
+	background: none;
+	font-family: 'Architects Daughter', cursive;
+	padding: 0 25px;
+}
+
+button:hover,
+th:hover {
+	cursor: pointer;
+}
+
+button:hover {
+	color: rgba(0, 0, 0, 1);
+	text-decoration: underline;
+	-webkit-transition: color 0.5;
+	-o-transition: color 0.5;
+	transition: color 0.5;
+}
+
+button:focus {
+	outline: none;
+}
+
+table {
+  	width: 270px;
+  	height: 270px;
+	margin: 10px auto;
+	border-collapse: collapse;
+	font-size: 3em;
+}
+
+th {
+	border: 2px solid #333;
+	width: 90px;
+	height: 90px;
+}
+
+tr:nth-child(1) > th {
+	border-top: none;
+}
+
+tr:nth-child(3) > th {
+	border-bottom: none;
+}
+
+th:nth-child(1) {
+	border-left: none;
+}
+
+th:nth-child(3) {
+	border-right: none;
+}
+
+.win {
+	background: #E94F37;
+	color: #fff;
+}
