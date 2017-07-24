@@ -1,6 +1,6 @@
 # FreeCodeCamp-Projects
 
-* 代码同时托管在codePen中，可点击以下链接查看：）
+* 代码同时托管在codePen中，链接如下：
 
 
 - [1- a Tribute Page - 一个致敬页](https://codepen.io/magicmai/full/peLOpZ) 【bootstrap】
