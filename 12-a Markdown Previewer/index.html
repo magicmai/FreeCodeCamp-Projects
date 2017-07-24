@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A Markdown Previewer</title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="sass.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.6.1/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.6.1/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.25.0/babel.min.js"></script>
+	
+</head>
+<body>
+	<!-- bootstrap, sass, react, babel -->
+    <!--
+    用户需求1：我可以在文本域内写 “Github风格”的 Markdown文档。
+    用户需求2：我可以实时预览解析后的 Markdown文档。
+    
+    *线索：你不必自己实现 Markdown的解析引擎，你可以引入这个 https://cdnjs.com/libraries/markedMarkdown解析库来帮助你解析文档。
+    -->
+
+    <div class="container" id="container"></div>
+
+    <script type="text/babel">
+	const defaultInput = 'Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nShopping list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\nThe rain---not the reign---in\nSpain.\n\n *[Herman Fassett](https://freecodecamp.com/hermanfassett)*';
+	const defaultOutput = marked(defaultInput);
+
+	class DisplayContainer extends React.Component {
+	  constructor(props) {
+	    super(props);
+
+	    this.state = {
+	      input: defaultInput,
+	      output: defaultOutput
+	    }
+
+	    this.handleChange = this.handleChange.bind(this);
+	  }
+
+	  handleChange(event) {
+	    this.setState({
+	      input: event.target.value,
+	      output: marked(event.target.value, {
+	        sanitize: true
+	      })
+	    });
+	  }
+
+	  render() {
+	    return (
+	      <div className='row'>
+	        <div className='col-md-6'>
+	          <textarea rows='25' value={this.state.input} onChange={this.handleChange} />
+	        </div>
+	        <div className='col-md-6'>
+	          <span dangerouslySetInnerHTML={ {__html: this.state.output} }></span>
+	        </div>
+	      </div>
+	    );
+	  }
+	}
+
+	ReactDOM.render(
+	  <DisplayContainer />,
+	  document.getElementById('container')
+	);
+    </script>
+
+</body>
+</html>
